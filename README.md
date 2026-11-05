@@ -12,10 +12,10 @@ trial batches and less material waste, and it makes it easier to test mixes in w
 
 | Name | PRN | Contribution |
 |---|---|---|
-| *(fill in)* | *(fill in)* | e.g. Data collection, EDA, preprocessing |
-| *(fill in)* | *(fill in)* | e.g. Model training and hyper-parameter tuning |
-| *(fill in)* | *(fill in)* | e.g. Evaluation, testing |
-| *(fill in)* | *(fill in)* | e.g. Deployment, Docker, GitHub, documentation |
+| *Pratik Kadu*    | *202401070198* | e.g. Data collection, EDA, preprocessing |
+| *Akshat Pandey*  | *202401070201* | e.g. Model training and hyper-parameter tuning |
+| *Aditya Bamnote* | *202401070204* | e.g. Evaluation, testing |
+| *Sanket Rode*    | *202401070207* | e.g. Deployment, Docker, GitHub, documentation |
 
 ## Results
 
@@ -23,7 +23,7 @@ Dataset: UCI Concrete Compressive Strength, 1,030 rows → **1,005 after removin
 
 | Model (tuned, with engineered features) | CV RMSE (MPa) | Test R² | Test RMSE (MPa) | Test MAE (MPa) |
 |---|---|---|---|---|
-| **XGBoost (selected)** | **4.21** | **0.941** | **4.21** | **2.66** |
+| **XGBoost (selected)** | **4.183** | **0.936** | **4.3675** | **2.67** |
 | Gradient Boosting | 4.23 | 0.937 | 4.33 | 2.73 |
 | SVR | 4.96 | 0.922 | 4.84 | 2.93 |
 | Random Forest | 4.96 | 0.921 | 4.85 | 3.42 |
@@ -47,7 +47,7 @@ concrete-strength-ml/
 │   └── predict.py         input validation + prediction logic shared by the app, the API and the tests
 ├── app/streamlit_app.py   web app
 ├── api/main.py            FastAPI REST API
-├── models/                concrete_pipeline.joblib (full pipeline) + metadata.json
+├── models/                concrete_pipeline.ubj (full pipeline) + metadata.json
 ├── reports/figures/       all plots (use them in the report, PPT and poster)
 ├── tests/                 pytest: validation, model behaviour, API, UI smoke test
 ├── Dockerfile, docker-compose.yml, requirements*.txt
