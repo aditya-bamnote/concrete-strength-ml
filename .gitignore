@@ -1,0 +1,22 @@
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Testing and notebook cache
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+
+# Operating system files
+.DS_Store
+
+# Old model format (the app uses UBJSON)
+models/*.joblib
+
+# Local secrets and environment variables
+.env
+.streamlit/secrets.toml

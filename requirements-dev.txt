@@ -1,0 +1,12 @@
+# Everything needed to re-run the notebook and the tests.
+-r requirements.txt
+scipy==1.18.1
+seaborn==0.13.2
+xlrd==2.0.2            # reads the original Concrete_Data.xls
+openpyxl==3.1.5
+ipykernel>=7.0
+nbconvert>=7.0
+nbformat>=5.0
+jupyterlab>=4.0
+pytest==9.1.1
+httpx==0.28.1          # needed by FastAPI's TestClient

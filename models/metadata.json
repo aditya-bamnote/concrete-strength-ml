@@ -1,0 +1,75 @@
+{
+  "model_name": "XGBoost",
+  "model_format": "xgboost_ubj",
+  "feature_engineering": true,
+  "best_params": {
+    "colsample_bytree": 0.7669644012595116,
+    "learning_rate": 0.033353222920290956,
+    "max_depth": 4,
+    "min_child_weight": 2,
+    "n_estimators": 883,
+    "reg_lambda": 1.0389260394630204,
+    "subsample": 0.6673164168691722
+  },
+  "n_rows_total": 1005,
+  "n_train": 804,
+  "n_test": 201,
+  "test_metrics": {
+    "R2": 0.9361,
+    "RMSE": 4.3675,
+    "MAE": 2.767
+  },
+  "cv_rmse_train": 4.1825,
+  "residual_band_90": {
+    "low": -5.623,
+    "high": 6.909,
+    "test_coverage": 0.925
+  },
+  "feature_ranges": {
+    "cement": {
+      "min": 102.0,
+      "max": 540.0,
+      "median": 265.0
+    },
+    "slag": {
+      "min": 0.0,
+      "max": 359.4,
+      "median": 20.0
+    },
+    "fly_ash": {
+      "min": 0.0,
+      "max": 200.1,
+      "median": 0.0
+    },
+    "water": {
+      "min": 121.75,
+      "max": 247.0,
+      "median": 185.7
+    },
+    "superplasticizer": {
+      "min": 0.0,
+      "max": 32.2,
+      "median": 6.1
+    },
+    "coarse_agg": {
+      "min": 801.0,
+      "max": 1145.0,
+      "median": 968.0
+    },
+    "fine_agg": {
+      "min": 594.0,
+      "max": 992.6,
+      "median": 780.0
+    },
+    "age": {
+      "min": 1.0,
+      "max": 365.0,
+      "median": 28.0
+    }
+  },
+  "water_binder_range": {
+    "min": 0.23507335380416242,
+    "max": 0.9
+  },
+  "dataset": "UCI Concrete Compressive Strength (Yeh, 1998), CC BY 4.0, doi:10.24432/C5PK67"
+}
